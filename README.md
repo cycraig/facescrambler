@@ -2,6 +2,20 @@
 
 I wrote this because the official examples of using OpenCV WebAssembly (Wasm) were pretty lacklustre. OpenCV Wasm does not support the full suite of OpenCV functions (good luck figuring out exactly what does and does not work though).
 
+### Start Webserver
+
+Wasm files cannot be loaded locally, so we need to run a web server (basically any web server will do).
+
+Python 3:
+```
+python -m http.server
+```
+
+Python 2.7:
+```
+python -m SimpleHTTPServer
+```
+
 ### Installation from Scratch
 
 The pre-compiled OpenCV wasm file is included in this repository. The following is required only if you want to compile the latest version of OpenCV to WebAssembly yourself. The steps here are based on the official OpenCV documentation: https://docs.opencv.org/4.1.1/d4/da1/tutorial_js_setup.html
@@ -80,17 +94,3 @@ The `O3` flag indicates aggressively optimising for speed. Other flags can be sp
 - `-Os` optimise for size
 - `-Oz` aggressively optimise for size
 - `-O[1-4]` optimise for speed
-
-### Start webserver
-
-Wasm files cannot be loaded locally, so we need to run a web server for the site to run (basically any web server will do).
-
-Python 3:
-```
-python -m http.server
-```
-
-Python 2.7:
-```
-python -m SimpleHTTPServer
-```
