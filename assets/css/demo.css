@@ -1,0 +1,121 @@
+body {
+    
+    background-image: url("/assets/img/geometry3.png")
+}
+
+#content {
+    /*max-width: 1440px;*/
+    /*min-width: 375px;*/
+    max-width: 940px;
+    min-width: 360px;
+}
+
+button {
+    font-size: 1.1em;
+}
+
+#slider {
+    display: flex;
+    margin: 0 auto;
+    width: max-content;
+    max-width: 100%;
+}
+
+#status {
+    display:block;
+    text-align:center;
+    margin: 0 auto 10px auto;
+}
+
+.button-group {
+    display: flex;
+    margin: 1em 0;
+    justify-content: center;
+}
+
+button {
+    margin: 0 10px;
+}
+
+.section {
+    margin: 2em auto 2em auto;
+    padding: 0;
+    max-width: 800px;
+    margin-bottom: 50px;
+    line-height: 1.6em;
+}
+
+#inner {
+    border-radius: 10px;
+    background-color: rgba(255, 255,255,0.4);
+}
+
+.round-btn {
+    border-radius:50px;
+}
+
+a:hover {
+  color: gray;
+}
+
+a {
+  /* no underline */
+  text-decoration: none; 
+  -webkit-text-decoration-skip: none;
+  background-image: none;
+  outline : none;
+  color: black;
+}
+
+.card-link {
+    padding: 1px;
+    text-decoration: none;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+}
+
+.card {
+    align-self: flex-start; /* prevent expanding to fill the flexbox row */
+    width: 17rem;
+    background-color: #fff;
+}
+
+.card > * {
+    text-decoration-color: white;
+    text-decoration: none;
+}
+
+.card-link:focus {
+  
+  padding: 0;
+  text-decoration: none;
+}
+
+.card .card-footer {
+    padding: 0;
+}
+
+.card-footer-btn {
+  width: 100%;
+  height: 100%;
+  border: 1px;
+  background: none;
+  padding: 15px 25px;
+  margin: 0;
+  box-shadow: none;
+}
+
+.card-github-icon {
+  margin-right: 0.25em;
+}
+
+.card-github-btn:focus {
+  border: 1px;
+  background: none;
+}
+
+a:focus {
+    text-decoration: underline;
+}
