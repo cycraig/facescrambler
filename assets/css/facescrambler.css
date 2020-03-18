@@ -1,0 +1,32 @@
+:root {
+    --max-content-width: 940px;
+}
+
+button {
+    font-size: 1.1em;
+    margin: 0 10px;
+}
+
+#slider {
+    display: flex;
+    margin: 0 auto;
+    width: max-content;
+    max-width: 100%;
+}
+
+#status {
+    display:block;
+    text-align:center;
+    margin: 0 auto 10px auto;
+}
+
+.button-group {
+    display: flex;
+    margin: 1em 0;
+    justify-content: center;
+}
+
+.section {
+    margin: 2em auto 2em auto;
+    padding: 0;
+}

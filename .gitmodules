@@ -1,0 +1,3 @@
+[submodule "assets_shared"]
+	path = assets_shared
+	url = https://github.com/cycraig/assets_shared.git
