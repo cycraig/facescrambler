@@ -62,10 +62,10 @@ function processImage() {
     cv.cvtColor(src, gray, cv.COLOR_RGBA2GRAY, 0);
     let faces = new cv.RectVector();
     let eyes = new cv.RectVector();
-    let minSize = new cv.Size(80,80)
+    let minSize = new cv.Size(60,60)
     
     // Detect face/s
-    faceCascade.detectMultiScale(gray, faces, 1.1, 7, 0, minSize);
+    faceCascade.detectMultiScale(gray, faces, 1.1, 6, 0, minSize);
     for (let i = 0; i < faces.size(); ++i) {
         let roiGray = gray.roi(faces.get(i));
         let roiSrc = src.roi(faces.get(i));
