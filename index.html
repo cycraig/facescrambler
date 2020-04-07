@@ -28,6 +28,7 @@
                 </div>
             </div>
             <p id='status'>OpenCV.js (WebAssembly) is loading...</p>
+            <noscript><p style='text-align:center;'>Your browser does not have JavaScript enabled, this page will not work.</p></noscript>
             <div id="slider" class="beer-slider">
                 <img id='srcImage' class="no-border" src='assets/img/trump.jpg' style='max-width: 425px; width:100%; height: auto;'></img>
                 <div id="reveal" class="beer-reveal">
@@ -46,6 +47,14 @@
         </div>
     </div>
 </div>
+<script>
+function checkWasmSupport() {
+    if (!('WebAssembly' in window)) {
+      document.getElementById("status").innerHTML = "Your browser does not support WebAssembly!";
+    }
+}
+window.onload = checkWasmSupport();
+</script>
 <script type="text/javascript" src="assets/js/BeerSlider.js"></script>
 <script type="text/javascript" src="assets/js/utils.js"></script>
 <script type="text/javascript" src="assets/js/main.js"></script>
